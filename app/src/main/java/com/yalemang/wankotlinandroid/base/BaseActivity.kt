@@ -15,5 +15,5 @@ abstract class BaseActivity: AppCompatActivity() {
     protected abstract fun initView()
     protected abstract fun initData()
     protected abstract fun setLayoutId():Int
-
 }
+
