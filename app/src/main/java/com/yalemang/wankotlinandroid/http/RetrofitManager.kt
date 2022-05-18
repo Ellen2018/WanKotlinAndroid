@@ -9,14 +9,14 @@ import java.util.concurrent.Executors
 
 class RetrofitManager {
 
-    private lateinit var okHttpClient: OkHttpClient
-    private lateinit var retrofit: Retrofit
+    private var okHttpClient: OkHttpClient
+    private var retrofit: Retrofit
     private var api: Api
 
     private constructor() {
         //日志拦截器
         val logInterceptor = HttpLoggingInterceptor {
-            Log.d("OkHttp","$it")
+            Log.d("OkHttp", it)
         }
         logInterceptor.level = HttpLoggingInterceptor.Level.BODY
 
