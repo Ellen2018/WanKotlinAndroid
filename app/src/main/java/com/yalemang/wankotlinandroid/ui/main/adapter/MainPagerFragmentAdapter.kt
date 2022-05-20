@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.yalemang.wankotlinandroid.ui.main.fragment.gc.GcFragment
 import com.yalemang.wankotlinandroid.ui.main.fragment.gzh.GzhFragment
-import com.yalemang.wankotlinandroid.ui.main.fragment.main.MainFragment
+import com.yalemang.wankotlinandroid.ui.main.fragment.home.HomeFragment
 import com.yalemang.wankotlinandroid.ui.main.fragment.project.ProjectFragment
 import com.yalemang.wankotlinandroid.ui.main.fragment.system.SystemFragment
 
@@ -20,7 +20,7 @@ class MainPagerFragmentAdapter(fragmentActivity: FragmentActivity) :
         val fragment =
             when (position) {
                 0 -> {
-                    MainFragment()
+                    HomeFragment()
                 }
                 1 -> {
                     GcFragment()
