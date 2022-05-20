@@ -1,5 +1,7 @@
 package com.yalemang.wankotlinandroid.ui.main
 
+import android.util.Log
+import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager2.widget.ViewPager2
 import com.yalemang.wankotlinandroid.R
 import com.yalemang.wankotlinandroid.base.BaseActivity
@@ -10,6 +12,10 @@ import kotlinx.android.synthetic.main.activity_main.*
  * 主界面
  */
 class MainActivity : BaseActivity() {
+
+    companion object{
+        var mainViewModel:MainViewModel? = null
+    }
 
     override fun initView() {
 
@@ -62,6 +68,9 @@ class MainActivity : BaseActivity() {
             view_pager_2.setCurrentItem(selectedPosition, true)
             true
         }
+
+        mainViewModel = ViewModelProvider(this,ViewModelProvider.NewInstanceFactory()).get(MainViewModel::class.java)
+
     }
 
     override fun setLayoutId(): Int {

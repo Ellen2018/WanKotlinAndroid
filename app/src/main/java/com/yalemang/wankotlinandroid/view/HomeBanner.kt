@@ -10,6 +10,4 @@ import com.youth.banner.Banner
  * 兼容Java泛型封装一层解决Java泛型与Kotlin不兼容问题
  */
 class HomeBanner(context: Context?, attrs: AttributeSet?) :
-    Banner<DataBanner, HomeBannerAdapter>(context, attrs) {
-
-}
+    Banner<DataBanner, HomeBannerAdapter>(context, attrs)
