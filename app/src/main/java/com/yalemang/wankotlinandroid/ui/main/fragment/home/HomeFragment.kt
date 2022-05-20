@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import com.yalemang.wankotlinandroid.R
 import com.yalemang.wankotlinandroid.base.BaseFragment
-import com.yalemang.wankotlinandroid.ui.main.MainActivity
 import com.yalemang.wankotlinandroid.ui.main.MainViewModel
 import com.yalemang.wankotlinandroid.ui.main.fragment.home.adapter.HomeBannerAdapter
 import kotlinx.android.synthetic.main.fragment_main.*
