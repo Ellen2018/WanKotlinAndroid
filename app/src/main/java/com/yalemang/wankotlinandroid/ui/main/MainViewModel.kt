@@ -18,8 +18,7 @@ class MainViewModel:ViewModel() {
     }
 
     private fun loadMainData(){
-
-        GlobalScope.launch() {
+        GlobalScope.launch {
             //获取首页数据
             Log.d("Ellen2020","当前线程:${Thread.currentThread().name}")
             val data = RetrofitManager.getInstance().getApi().getBannerData()

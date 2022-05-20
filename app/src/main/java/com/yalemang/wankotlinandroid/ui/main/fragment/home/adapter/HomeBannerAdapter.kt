@@ -11,7 +11,7 @@ import com.yalemang.wankotlinandroid.bean.BannerData
 import com.yalemang.wankotlinandroid.bean.DataBanner
 import com.youth.banner.adapter.BannerAdapter
 
-class HomeBannerAdapter<T, U>(dataList: List<DataBanner>?) :
+class HomeBannerAdapter(dataList: List<DataBanner>?) :
     BannerAdapter<DataBanner, BannerViewHolder>(dataList) {
 
     override fun onCreateHolder(parent: ViewGroup?, viewType: Int): BannerViewHolder {
